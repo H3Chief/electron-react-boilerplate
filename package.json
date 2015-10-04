@@ -13,10 +13,12 @@
     "start-dev": "NODE_ENV=development electron .",
     "start-hot": "HOT=1 NODE_ENV=development electron .",
     "package": "node package.js",
-    "package-all": "node package.js --all"
+    "package-all": "node package.js --all",
+	"gen":"gen"
   },
-  "bin":{
-    "electron":"./node_modules/.bin/electron"
+  "bin": {
+    "electron": "./node_modules/.bin/electron",
+	"gen":"./generators/generator-erb.js"
   },
   "repository": {
     "type": "git",
@@ -74,7 +76,9 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.10.1",
-    "webpack-target-electron-renderer": "^0.1.0"
+    "webpack-target-electron-renderer": "^0.1.0",
+    "yeoman-environment": "^1.2.7",
+    "yeoman-generator": "^0.20.3"
   },
   "dependencies": {
     "debug": "^2.2.0",
